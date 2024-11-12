@@ -9,3 +9,6 @@ def about(request):
 
 def services(request):
     return render(request, 'services.html')
+
+def insert(request):
+    return render(request, 'insert.html')
