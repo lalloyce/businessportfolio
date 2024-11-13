@@ -8,10 +8,10 @@
 </head>
 <body>
     
-    <div class="containr">
+    <div class="container mt-5">
         <h3>Register Teachers</h3>
         <div class="col-md-6">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="/insert_data/" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <input type = "hidden" name = "csrfmiddlewaretoken" value = "{{ csrf_token }}">
                 
@@ -35,7 +35,7 @@
                 <input type="date" class="form-control" name="dob" id="dob" placeholder="21/09/1988" required>
         
                 <label for="avatar">Upload Photo</label>
-                input type="file" class="form-control" name="avatar" id="avatar" required>
+                <input type="file" class="form-control" name="avatar" id="avatar" required>
                 <br>
                 <button type="submit">Submit</button>
             </form>
